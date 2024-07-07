@@ -1,0 +1,23 @@
+/* load main color variables first */
+@import url("main/globals.css");
+/* then load everything else */
+@import url("main/main-content.css");
+@import url("bars/toolbars/navbar.css");
+@import url("bars/toolbars/tabbar.css");
+@import url("bars/sidebar.css");
+@import url("bars/floating-searchbar.css");
+
+* {
+  font-family: "Cartograph CF Thin" !important;
+}
+
+:root {
+  --tab-min-height: 20px !important;
+}
+
+hbox#urlbar > .urlbar-input-container {
+  padding-left: 12px !important;
+  &> box#identity-box.verifiedDomain {
+    display: none !important;
+  }
+}
