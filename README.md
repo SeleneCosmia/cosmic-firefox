@@ -1,2 +1,4 @@
-# cosmic-firefox
-My customized firefox config featuring custom css and javascript for added functionality
+# **MossyFox**
+
+My personalized, bryophilic, carefully and patiently curated Firefox
+userChrome config. <sup>An eternal work in progres...</sup>
