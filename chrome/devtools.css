@@ -1,0 +1,8 @@
+@import url("globals.css");
+
+splitter.devtools-horizontal-splitter {
+  background: #806327 !important;
+}
+splitter.devtools-vertical-splitter {
+  background: linear-gradient(to bottom, #00000000 15%, #806327, #00000000 85%) !important;
+}

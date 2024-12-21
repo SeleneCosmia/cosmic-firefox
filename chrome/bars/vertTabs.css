@@ -1,0 +1,10 @@
+@import '../globals.css';
+
+/* Hide horizontal tabs/titlebar while using vertTabs */
+#TabsToolbar {
+  display: none !important;
+}
+
+div.wrapper {
+
+}

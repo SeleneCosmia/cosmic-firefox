@@ -1,0 +1,74 @@
+@import url("../main/globals.css");
+
+/* ------------------------| Floating Urlbar  |-------------------------- */
+
+#urlbar:not([breakout-extend]) {
+  box-shadow: 0 0 1% 2px rgba(256,256,256,0.35) !important;
+  transition: box-shadow 1s cubic-bezier(0.23, 1, 0.320, 1);
+  &:hover {
+    box-shadow: 0 0 2px 2px var(--accent-cstm);
+  }
+}
+#urlbar[breakout] {
+  transition: transform 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &[breakout-extend] {
+    &:is([open]) {
+      transform: translateY(36px);
+      &:is([focused]) {
+        transform: translateY(46px);
+      }
+    }
+  }
+}
+#urlbar[breakout-extend] {
+  position: fixed !important;
+  bottom: auto !important;
+  left: 12vw !important;
+  width: 64vw !important;
+  z-index: 99999 !important;
+
+  #urlbar-input { font-size: 21.5px !important; }
+  #urlbar-input-container, .urlbar-input-container { height: 50px !important; }
+
+  .urlbar-input-container {
+    > #page-action-buttons { display: none !important; }
+  }
+  #urlbar-input-container {
+    background-color: color-mix(in srgb, var(--bg-color-02) 40%, transparent 60%) !important;
+    backdrop-filter: blur(12px);
+    > :is(box, image){
+      height: 28px !important;
+      margin-block: calc((50px - 28px) / 4) !important;
+    }
+  }
+  #urlbar-background {
+    margin: 1% !important;
+    border-radius: 2px !important;
+    background-color: var(--bg-03) !important;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: -1vi;
+    margin-top: 0px !important;
+    background-color: var(--bg-color-transparent) !important;
+    backdrop-filter: blur(16px) !important;
+    transition: none !important;
+    z-index: -1 !important;
+  }
+
+  > .urlbarView > hbox.search-one-offs {
+    > hbox.search-panel-one-offs-header.search-panel-header {
+      display: none !important;
+      + box.search-panel-one-offs-container {
+        margin-left: 2pc;
+      }
+    }
+  }
+}
+/*  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);*/

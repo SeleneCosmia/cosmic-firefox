@@ -1,0 +1,26 @@
+@import '../globals.css';
+@import 'navbar.css';
+@import 'floating-urlbar.css';
+
+#urlbar-container {
+  --urlbar-container-height: 32px !important;
+  margin-left: 0 !important;
+  #urlbar {
+    --urlbar-toolbar-height: 32px !important;
+    border-radius: 6px;
+    > .urlbar-input-container {
+      background-color: ;
+    }
+  }
+}
+
+.urlbarView {
+  background-color: oklch(0.6135 0.1243 103.67 / 69.7%);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#urlbar-background {
+  background-color:  oklch(0.4384 0.0895 103.67) !important;
+  outline: none !important;
+}

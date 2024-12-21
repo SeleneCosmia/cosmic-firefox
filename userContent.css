@@ -1,0 +1,37 @@
+:root,
+panel,
+dialog,
+window {
+  --lwt-toolbarbutton-icon-fill-attention: hsl(282, 19%, 73%) !important;
+  --button-primary-bgcolor: hsl(282, 19%, 73%) !important;
+  --button-primary-hover-bgcolor: hsl(282, 19%, 73%) !important;
+  --button-primary-active-bgcolor: hsl(282, 19%, 73%) !important;
+  --in-content-primary-button-background: hsl(282, 19%, 73%) !important;
+  --in-content-primary-button-background-hover: hsl(282, 19%, 73%) !important;
+  --in-content-primary-button-background-active: hsl(282, 19%, 73%) !important;
+  --input-border-color: hsl(282, 19%, 73%) !important;
+  --uc-checkbox-checked-bgcolor: hsl(282, 19%, 73%) !important;
+  --checkbox-checked-bgcolor: hsl(282, 19%, 73%) !important;
+  --focus-outline-color: hsl(282, 19%, 73%) !important;
+  --in-content-link-color: hsl(282, 19%, 73%) !important;
+}
+
+* {
+  scrollbar-width: thin !important;
+  :not(select) {
+    scrollbar-color: hsl(282, 19%, 73%) #202020 !important;
+  }
+}
+
+body,
+html,
+.browserContainer,
+#mainPopupSet:not(url("about:config")),
+#main-window:not(url("about:config")),
+#tabbrowser-tabbox:not(url("about:config")) {
+  background-color: #202020 !important;
+}
+.browserContainer,
+#tabbrowser-tabpanels {
+  background: #202020 !important;
+}

@@ -1,0 +1,34 @@
+@import url("../../main/globals.css");
+
+tab.tabbrowser-tab {
+  &:focus {
+    --focus-outline-color: var(--hl-02) !important;
+  }
+}
+
+tabs#tabbrowser-tabs[orient="vertical"] {
+  .tab-background {
+    border-radius: 2px !important;
+  }
+}
+
+/* panel[type="arrow"] { */
+/*   transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95) !important; */
+/*   @media (-moz-panel-animations) { */
+/*     &:not([animate="false"]) { */
+/*       transition-duration: 300ms !important; */
+/*     } */
+/*   } */
+/*   @media not (-moz-platform: macos) { */
+/*     transform: unset; */
+/*   } */
+/*   transition-property: transform, opacity !important; */
+/*   will-change: transform, opacity !important; */
+/*   opacity: 0; */
+/*   transform: translateX(-70px), scaleX(0%); */
+/*   &:is([animate="open"]) { */
+/*     opacity: 1; */
+/*     transform: translateX(121px), scaleX(100%); */
+/*     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95) !important; */
+/*   } */
+/* } */

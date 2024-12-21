@@ -1,0 +1,47 @@
+:root {
+  /* ------- Custom Variable Definitions ---------- */
+  --border-color:           #D9DB70;
+  --bg-color-01:            #B7AE4C;
+  --bg-color-02:            #6F782A;
+  --bg-color-03:            #3A3F12;
+  --accent-cstm:            #BFADC7;
+  --bg-color-transparent:   hsla(55, 43%, 51%, 25%);
+
+  /* --------------------------------------------- */
+
+  --rounding: 12px;
+  --browse-round: 16px;
+  --blur-half: blur(6px);
+  --blur-full: blur(12px);
+  --ease-slider: cubic-bezier(.52,-0.03,.26,.74);
+  /* -------------------------------------------- */
+
+  /* Custom Color Variables */
+  --bg-01: oklch(0.1398 0 153.43);
+  --bg-02: oklch(0.2025 0.0349 133.56);
+  --bg-03: oklch(0.345 0.0634 115.41);
+  --bg-04: oklch(0.5487 0.102 115.42);
+  --fg-01: #B8AF4E;
+  --fg-02: #DADC72;
+  --fg-03: #E3ECA7;
+  --hl-01: #E8D973;
+  --hl-02: #CA9037;
+  --hl-03: #C57738;
+  --hl-04: #D2815F;
+  --hl-05: #8D3A17;
+  --brown: #3C1806;
+  --gr-01: #4F742A;
+  --gr-02: #6EA666;
+  --br-bl: #ADDCD3;
+}
+
+/* --------------------| Theme variables built-in to Firefox */
+
+:root {
+  --button-primary-bgcolor:             var(--accent-cstm) !important;
+  --button-background-color-primary:    var(--br-bl) !important;
+
+  --sidebar-background-color:   transparent;
+  --sidebar-text-color:         var(--fg-03);
+  --sidebar-border-color:       transparent !important;
+}

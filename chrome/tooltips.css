@@ -1,0 +1,24 @@
+@import url("globals.css");
+
+#tab-preview-panel {
+    transition-duration: 600ms;
+    &:not([panelopen="true"]) {
+      transition-property: opacity, transform;
+      will-change: transform, opacity;
+      opacity: 0;
+      transform: scaleX(-100%) translateX(-2vw);
+    }
+}
+
+panel#tab-preview-panel[type="arrow"] {
+  transition-timing-function: cubic-bezier(0.8416, 0.47, 0.9752, 0.76435);
+  &:where([animating="true"][panelopen="true"]) {
+    opacity: 1;
+    filter: drop-shadow(2px 0 5px rgba(80,110,35,0.55)) !important;
+    transform: scaleX(100%) translateX(4vw);
+  }
+}
+
+.tab-preview-pid-activeness {
+  display: none !important;
+}
